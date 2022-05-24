@@ -21,7 +21,7 @@ const Chat = () => {
   const data = { message: mensaje, user: userName };
 
   const fetchData = () => {
-    const url = "http://localhost:3001/api/message";
+    const url = "https://chat-server-ruddy.vercel.app/api/message";
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
